@@ -1,0 +1,31 @@
+:root{
+    --celeste: #239dbf91;
+}
+*{
+    border:0;
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+/*Menu*/
+.navbar{
+    background: none;
+    position:fixed;
+    z-index: 3;
+    width: 100%;
+}
+nav a img{
+    width: 30px;
+}
+.nav-link{
+    color: rgb(235, 235, 235);
+}
+.nav-link .active{
+    color:white;
+}
+
+.navbar-dark .navbar-toggler{
+    border-color: var(--white);
+}
