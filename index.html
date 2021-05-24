@@ -5,19 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
-    <!-- bootstrap CSS -->
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap CSS 4.6 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
     <!-- Mis estilos -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
     <title>Document</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
+        <!-- Menú -->
         <nav class="navbar navbar-expand-lg navbar-dark px-5">
             <div class="container-fluid">
                 <a class="navbar-brand"><img src="assets/img/viajes.svg" alt="logo">Viajes Chile</a>
@@ -27,14 +37,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto text-white">
-                        <a class="nav-link active" href="#">Inicio</a>
-                        <a class="nav-link" href="#">Quienes somos</a>
-                        <a class="nav-link" href="#">Destacado</a>
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link active" href="#header">Inicio</a>
+                        <a class="nav-link" href="#quienes-somos">Quienes somos</a>
+                        <a class="nav-link" href="#destacados">Destacado</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </div>
                 </div>
             </div>
         </nav>
+
+        <!-- Carousel -->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -56,36 +68,190 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+
     </header>
+
     <!-- Quienes somos -->
-    <section>
+    <section id="quienes-somos" class="my-5 d-none d-md-block">
+        <div class="container">
+            <h2>¿Quienes somos?</h2>
+            <hr>
+            <div class="row py-4">
 
+                <div class="col-4">
+                    <p class="text-center icon bg-info"><i class="fas fa-plane"></i></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos laudantium consequuntur iusto,
+                        quisquam omnis voluptas tempora sint quam, itaque ipsam perferendis possimus similique error,
+                        aut debitis nam molestiae ipsa vel! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Animi nam porro doloribus fugiat eos quisquam unde amet, non debitis inventore atque error
+                        commodi tempore quaerat cum, ex veritatis magni assumenda.</p>
+                </div>
+
+                <div class="col-4">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos laudantium consequuntur iusto,
+                        quisquam omnis voluptas tempora sint quam, itaque ipsam perferendis possimus similique error,
+                        aut debitis nam molestiae ipsa vel! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Animi nam porro doloribus fugiat eos quisquam unde amet, non debitis inventore atque error
+                        commodi tempore quaerat cum, ex veritatis magni assumenda.</p>
+                    <p class="text-center icon bg-info"><i class="fas fa-mountain"></i></p>
+                </div>
+
+                <div class="col-4">
+                    <p class="text-center icon bg-info"><i class="fas fa-route"></i></p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos laudantium consequuntur iusto,
+                        quisquam omnis voluptas tempora sint quam, itaque ipsam perferendis possimus similique error,
+                        aut debitis nam molestiae ipsa vel! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Animi nam porro doloribus fugiat eos quisquam unde amet, non debitis inventore atque error
+                        commodi tempore quaerat cum, ex veritatis magni assumenda.</p>
+                </div>
+
+            </div>
+        </div>
     </section>
+
     <!-- Destacados -->
-    <section>
+    <section id="destacados" class="my-5">
+        <div class="container">
+            <h2>Destacados</h2>
+            <hr>
+            <div class="row ">
+                
+                <article class="col-3 d-flex align-self-stretch">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-info">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </article>
 
-    </section>
-    <!-- Contacto -->
-    <section>
+                <article class="col-3 d-flex align-self-stretch">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-info">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </article>
 
+                <article class="col-3 d-flex align-self-stretch">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-info">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-3 d-flex align-self-stretch">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-info">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
     </section>
+
+    <!-- Seccion Contacto -->
+
+    <section id="contacto" class="my-5">
+        <div class="container">
+            <h2>Contacto</h2>
+            <hr>
+
+            <!-- Codigo Typeform -->
+            <div class="typeform-widget" data-url="https://form.typeform.com/to/xmyjJwuf?typeform-medium=embed-snippet"
+                style="width: 100%; height: 500px;"></div>
+            <script>
+                (function () {
+                    var qs, js, q, s, d = document,
+                        gi = d.getElementById,
+                        ce = d.createElement,
+                        gt = d.getElementsByTagName,
+                        id = "typef_orm",
+                        b = "https://embed.typeform.com/";
+                    if (!gi.call(d, id)) {
+                        js = ce.call(d, "script");
+                        js.id = id;
+                        js.src = b + "embed.js";
+                        q = gt.call(d, "script")[0];
+                        q.parentNode.insertBefore(js, q)
+                    }
+                })()
+            </script>
+            <!-- Final codigo typeform -->
+            
+        </div>
+    </section>
+
+    <!-- FOOTER -->
 
     <footer>
 
+        <div class="bg-info container-fluid">
+
+            <div class="row">
+
+                <div class="col-md-5 text-right">
+                    <span class="font-weight-bold text-white text-center">VIAJES CHILE</span>
+                </div>
+
+                <div class="col-md-7 icons text-center">
+                    <!-- Github -->
+                    <a href="https://github.com" target="_blank" data-toggle="tooltip" data-placement="top"
+                        title="Github">
+                        <i class="fab align-middle fa-github-square"></i>
+                    </a>
+                    <!-- Linkeind -->
+                    <a href="https://www.linkedin.com" target="_blank" data-toggle="tooltip" data-placement="top"
+                        title="LinkedIn">
+                        <i class="fab align-middle fa-linkedin"></i>
+                    </a>
+                    <!-- Twitter -->
+                    <a href="https://twitter.com" target="_blank" data-toggle="tooltip" data-placement="top"
+                        title="Twitter">
+                        <i class="fab align-middle fa-twitter-square"></i>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com" target="_blank" data-toggle="tooltip" data-placement="top"
+                        title="Facebook">
+                        <i class="fab align-middle fa-facebook-square"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
     </footer>
 
-    <!-- Jquery  -->
+    <!-- Jquery 3.5 -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
-    <!-- Popper JS -->
+    <!-- Popper JS 1.16 -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
     </script>
-    <!-- bootstrap JS -->
+    <!-- bootstrap JS 4.6 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
+
+
 </body>
 
 </html>
