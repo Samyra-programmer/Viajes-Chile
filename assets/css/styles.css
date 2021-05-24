@@ -50,16 +50,14 @@ nav a img {
 
 /* Fin menu */
 
-h2 {
+h1, h2 {
+    font-size: 2rem;
     text-align: center;
 }
 hr {
     background-color: var(--celeste);
     height: 1px;
-    width: 95%;
-    
 }
-
 /*Sección Quienes somos */
 .icon {
     font-size: 1.5em;
@@ -73,6 +71,8 @@ hr {
 
 .card {
     max-width: 15rem;
+    margin: 15px auto;
+
 }
 
 /*Footer*/
@@ -86,4 +86,10 @@ footer {
 
 .icons a i {
     margin: 0 5px;
+    font-size: 40px;
+}
+#centro{
+    width: 70%;
+    margin-left: 20%;
+    text-align: center;
 }
